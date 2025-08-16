@@ -340,3 +340,229 @@ export const categories = [
   'Bakery',
   'Pantry & Dry Goods',
 ];
+
+// Placement suggestions data
+export const placementSuggestions = [
+  {
+    id: 'PS001',
+    itemId: 'SKU567',
+    itemName: 'Fresh Milk 1L',
+    category: 'Dairy',
+    currentPlacement: {
+      zone: 'Refrigerated Section',
+      position: 'Middle Shelf',
+      duration: '14 days',
+    },
+    suggestedPlacement: {
+      zone: 'Premium End Cap',
+      position: 'Eye Level',
+      duration: '7 days',
+      reasoning:
+        'High demand item with 285 units sold this week. Move to premium visibility to maximize sales before expiration.',
+    },
+    performance: {
+      currentSales: 285,
+      projectedIncrease: 25,
+      expectedRevenue: 17812,
+      confidenceScore: 92,
+    },
+    priority: 'High',
+    urgency: 'This Week',
+    storeRecommendations: ['Store 1', 'Store 3', 'Store 5'],
+    aiInsights: [
+      'Item has 3-day shelf life remaining',
+      'High foot traffic area can increase visibility by 40%',
+      'Similar items showed 25% sales increase in end caps',
+    ],
+  },
+  {
+    id: 'PS002',
+    itemId: 'SKU890',
+    itemName: 'Instant Noodles',
+    category: 'Pantry',
+    currentPlacement: {
+      zone: 'Aisle 3',
+      position: 'Bottom Shelf',
+      duration: '30 days',
+    },
+    suggestedPlacement: {
+      zone: 'Checkout Counter Display',
+      position: 'Impulse Buy Zone',
+      duration: '14 days',
+      reasoning:
+        'Popular convenience item. Position near checkout for impulse purchases, especially during lunch hours.',
+    },
+    performance: {
+      currentSales: 134,
+      projectedIncrease: 45,
+      expectedRevenue: 9715,
+      confidenceScore: 87,
+    },
+    priority: 'Medium',
+    urgency: 'Next Week',
+    storeRecommendations: ['Store 2', 'Store 4', 'Store 7'],
+    aiInsights: [
+      'Peak sales during 11 AM - 2 PM',
+      'Checkout placement increases impulse sales by 45%',
+      'Bundle opportunity with beverages',
+    ],
+  },
+  {
+    id: 'PS003',
+    itemId: 'SKU123',
+    itemName: 'Bananas 1kg',
+    category: 'Fresh Produce',
+    currentPlacement: {
+      zone: 'Produce Section',
+      position: 'Side Wall',
+      duration: '7 days',
+    },
+    suggestedPlacement: {
+      zone: 'Store Entrance',
+      position: 'Welcome Display',
+      duration: '3 days',
+      reasoning:
+        'Fresh produce attracts customers. Use at entrance to create fresh, healthy store impression.',
+    },
+    performance: {
+      currentSales: 156,
+      projectedIncrease: 18,
+      expectedRevenue: 9204,
+      confidenceScore: 78,
+    },
+    priority: 'Medium',
+    urgency: 'Next 3 Days',
+    storeRecommendations: ['Store 1', 'Store 6'],
+    aiInsights: [
+      'Quick turnover needed due to ripening',
+      'Entrance displays increase produce sales by 18%',
+      'Peak freshness for 3 more days',
+    ],
+  },
+  {
+    id: 'PS004',
+    itemId: 'SKU001',
+    itemName: 'Fresh Milk 1L',
+    category: 'Dairy',
+    currentPlacement: {
+      zone: 'Back Refrigerator',
+      position: 'Low Visibility',
+      duration: '21 days',
+    },
+    suggestedPlacement: {
+      zone: 'Front Refrigerator',
+      position: 'Eye Level',
+      duration: '5 days',
+      reasoning:
+        'Low stock alert (15 units). Maximize visibility to clear remaining inventory before restocking.',
+    },
+    performance: {
+      currentSales: 15,
+      projectedIncrease: 35,
+      expectedRevenue: 1012,
+      confidenceScore: 95,
+    },
+    priority: 'High',
+    urgency: 'Immediate',
+    storeRecommendations: ['Store 1', 'Store 3'],
+    aiInsights: [
+      'Critical low stock - only 15 units remaining',
+      'Eye-level placement increases dairy sales by 35%',
+      'Restock scheduled in 5 days',
+    ],
+  },
+  {
+    id: 'PS005',
+    itemId: 'SKU678',
+    itemName: 'White Bread',
+    category: 'Bakery',
+    currentPlacement: {
+      zone: 'Bakery Corner',
+      position: 'Standard Shelf',
+      duration: '10 days',
+    },
+    suggestedPlacement: {
+      zone: 'Cross-Merchandise with Spreads',
+      position: 'Bundle Display',
+      duration: '7 days',
+      reasoning:
+        'High-performing item (198 units sold). Create bundle display with jams and spreads to increase basket size.',
+    },
+    performance: {
+      currentSales: 198,
+      projectedIncrease: 22,
+      expectedRevenue: 12078,
+      confidenceScore: 84,
+    },
+    priority: 'Medium',
+    urgency: 'This Week',
+    storeRecommendations: ['Store 2', 'Store 5'],
+    aiInsights: [
+      'Strong performance indicator',
+      'Cross-merchandising increases basket size by 22%',
+      'Peak sales on weekend mornings',
+    ],
+  },
+];
+
+// Store layout zones for placement suggestions
+export const storeZones = [
+  {
+    id: 'entrance',
+    name: 'Store Entrance',
+    description: 'High traffic area for first impressions',
+    visibility: 'Very High',
+    footTraffic: 95,
+    bestFor: ['Fresh Produce', 'Seasonal Items', 'Promotions'],
+  },
+  {
+    id: 'endcap',
+    name: 'End Cap Displays',
+    description: 'High-visibility promotional areas',
+    visibility: 'High',
+    footTraffic: 80,
+    bestFor: ['Featured Items', 'High-margin Products', 'New Arrivals'],
+  },
+  {
+    id: 'checkout',
+    name: 'Checkout Counter',
+    description: 'Impulse purchase zone',
+    visibility: 'High',
+    footTraffic: 100,
+    bestFor: ['Small Items', 'Snacks', 'Convenience Products'],
+  },
+  {
+    id: 'eyeLevel',
+    name: 'Eye Level Shelves',
+    description: 'Optimal visibility at customer eye level',
+    visibility: 'High',
+    footTraffic: 70,
+    bestFor: ['Premium Products', 'Popular Brands', 'High-margin Items'],
+  },
+  {
+    id: 'refrigerated',
+    name: 'Refrigerated Section',
+    description: 'Climate-controlled area for perishables',
+    visibility: 'Medium',
+    footTraffic: 60,
+    bestFor: ['Dairy', 'Fresh Produce', 'Meat & Poultry'],
+  },
+  {
+    id: 'aisles',
+    name: 'Main Aisles',
+    description: 'Standard product placement areas',
+    visibility: 'Medium',
+    footTraffic: 50,
+    bestFor: ['Pantry Items', 'Household Goods', 'Regular Inventory'],
+  },
+];
+
+// Placement performance metrics
+export const placementMetrics = {
+  totalSuggestions: 45,
+  implementedSuggestions: 32,
+  avgSalesIncrease: 28.5,
+  totalRevenueIncrease: 245000,
+  successRate: 89.2,
+  avgImplementationTime: 2.3, // days
+};

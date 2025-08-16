@@ -110,6 +110,209 @@ export const promotionSuggestions = [
   },
 ];
 
+// Customer segmentation and membership data
+export const customerSegments = [
+  {
+    id: 1,
+    name: 'Young Professionals',
+    description: 'Ages 22-35, urban professionals with disposable income',
+    totalMembers: 2847,
+    characteristics: {
+      ageRange: '22-35',
+      avgIncome: 'High',
+      location: 'Urban',
+      shoppingBehavior: 'Quality-focused, brand conscious',
+      preferredCategories: ['Electronics', 'Fashion', 'Home & Living'],
+      avgOrderValue: 750000,
+      frequency: 'Monthly',
+    },
+    growthRate: 15.2,
+    conversionRate: 8.4,
+    color: '#3b82f6',
+  },
+  {
+    id: 2,
+    name: 'Family Shoppers',
+    description: 'Ages 30-50, families with children',
+    totalMembers: 3124,
+    characteristics: {
+      ageRange: '30-50',
+      avgIncome: 'Medium-High',
+      location: 'Suburban',
+      shoppingBehavior: 'Value-oriented, bulk purchases',
+      preferredCategories: ['Groceries', 'Kids & Baby', 'Home & Garden'],
+      avgOrderValue: 950000,
+      frequency: 'Bi-weekly',
+    },
+    growthRate: 12.8,
+    conversionRate: 12.1,
+    color: '#10b981',
+  },
+  {
+    id: 3,
+    name: 'Budget Conscious',
+    description: 'Ages 18-40, price-sensitive shoppers',
+    totalMembers: 1956,
+    characteristics: {
+      ageRange: '18-40',
+      avgIncome: 'Low-Medium',
+      location: 'Mixed',
+      shoppingBehavior: 'Deal-seeking, comparison shopping',
+      preferredCategories: ['Clothing', 'Electronics', 'Books & Media'],
+      avgOrderValue: 350000,
+      frequency: 'As needed',
+    },
+    growthRate: 22.4,
+    conversionRate: 15.7,
+    color: '#f59e0b',
+  },
+  {
+    id: 4,
+    name: 'Senior Citizens',
+    description: 'Ages 55+, traditional shoppers',
+    totalMembers: 1689,
+    characteristics: {
+      ageRange: '55+',
+      avgIncome: 'Medium',
+      location: 'Suburban/Rural',
+      shoppingBehavior: 'Loyalty-focused, in-store preference',
+      preferredCategories: ['Health & Wellness', 'Home & Garden', 'Books'],
+      avgOrderValue: 480000,
+      frequency: 'Weekly',
+    },
+    growthRate: 8.1,
+    conversionRate: 18.9,
+    color: '#8b5cf6',
+  },
+  {
+    id: 5,
+    name: 'Premium Customers',
+    description: 'High-value customers across all ages',
+    totalMembers: 567,
+    characteristics: {
+      ageRange: '25-65',
+      avgIncome: 'Very High',
+      location: 'Urban Premium',
+      shoppingBehavior: 'Luxury-focused, brand loyal',
+      preferredCategories: ['Premium Electronics', 'Luxury Fashion', 'Gourmet'],
+      avgOrderValue: 2100000,
+      frequency: 'Monthly',
+    },
+    growthRate: 18.7,
+    conversionRate: 25.3,
+    color: '#dc2626',
+  },
+];
+
+// Membership registration data
+export const membershipData = {
+  totalMembers: 10183,
+  newMembersThisMonth: 342,
+  membershipGrowthRate: 16.8,
+  averageLifetimeValue: 4200000,
+  memberVsNonMemberConversion: {
+    members: 14.7,
+    nonMembers: 3.2,
+  },
+  registrationTrends: [
+    { month: 'Feb', newMembers: 198, totalMembers: 9456 },
+    { month: 'Mar', newMembers: 256, totalMembers: 9712 },
+    { month: 'Apr', newMembers: 287, totalMembers: 9999 },
+    { month: 'May', newMembers: 234, totalMembers: 10233 },
+    { month: 'Jun', newMembers: 298, totalMembers: 10531 },
+    { month: 'Jul', newMembers: 312, totalMembers: 10843 },
+    { month: 'Aug', newMembers: 342, totalMembers: 11185 },
+  ],
+};
+
+// AI-powered segmentation suggestions
+export const segmentationSuggestions = [
+  {
+    id: 1,
+    title: 'Target Young Professionals with Tech Flash Sales',
+    segment: 'Young Professionals',
+    strategy: 'Create weekend flash sales for premium electronics and gadgets',
+    expectedImpact: {
+      reachPercentage: 78,
+      estimatedRevenue: 145000000,
+      expectedROI: 4.2,
+    },
+    suggestedChannels: ['Mobile App Push', 'Social Media', 'Email'],
+    timing: 'Weekend evenings (6-9 PM)',
+    personalization:
+      'Highlight latest tech trends and professional productivity tools',
+  },
+  {
+    id: 2,
+    title: 'Family Bundle Promotions for Bulk Shoppers',
+    segment: 'Family Shoppers',
+    strategy: 'Create family-sized bundle deals with bulk discounts',
+    expectedImpact: {
+      reachPercentage: 65,
+      estimatedRevenue: 198000000,
+      expectedROI: 3.8,
+    },
+    suggestedChannels: ['Email Newsletter', 'In-store Display', 'WhatsApp'],
+    timing: 'Weekends and school holidays',
+    personalization: 'Focus on family essentials and children-related products',
+  },
+  {
+    id: 3,
+    title: 'Price-Drop Alerts for Budget Conscious Segment',
+    segment: 'Budget Conscious',
+    strategy:
+      'Implement price-drop notification system with limited-time offers',
+    expectedImpact: {
+      reachPercentage: 89,
+      estimatedRevenue: 89000000,
+      expectedROI: 5.1,
+    },
+    suggestedChannels: ['SMS Alerts', 'Mobile App', 'WhatsApp'],
+    timing: 'End of month and clearance periods',
+    personalization:
+      'Emphasize savings amount and comparison with regular prices',
+  },
+  {
+    id: 4,
+    title: 'Loyalty Rewards for Senior Customers',
+    segment: 'Senior Citizens',
+    strategy:
+      'Implement loyalty point multiplier during health & wellness promotions',
+    expectedImpact: {
+      reachPercentage: 72,
+      estimatedRevenue: 67000000,
+      expectedROI: 4.6,
+    },
+    suggestedChannels: [
+      'In-store Announcement',
+      'Physical Mail',
+      'Phone Calls',
+    ],
+    timing: 'Weekday mornings (9 AM - 12 PM)',
+    personalization: 'Highlight health benefits and quality assurance',
+  },
+  {
+    id: 5,
+    title: 'Exclusive VIP Previews for Premium Customers',
+    segment: 'Premium Customers',
+    strategy:
+      'Offer early access to luxury items and exclusive member-only sales',
+    expectedImpact: {
+      reachPercentage: 95,
+      estimatedRevenue: 234000000,
+      expectedROI: 6.8,
+    },
+    suggestedChannels: [
+      'Personal Account Manager',
+      'Exclusive App Section',
+      'VIP Email',
+    ],
+    timing: 'Pre-launch and exclusive time slots',
+    personalization:
+      'Curated luxury selections and personalized recommendations',
+  },
+];
+
 // Performance analytics data
 export const promotionPerformanceData = [
   { month: 'Feb', revenue: 280000, campaigns: 3, roi: 2.8 },
